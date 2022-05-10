@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ab</title>
+</head>
+<body>
+    <input type="number" name="diem_hoa" placeholder="nhập điểm hoa" id="Hoa">
+    <input type="number" name="diem_ly" placeholder=" nhập điểm lý" id="Ly">
+    <input type="number" name="diem_sinh" placeholder="nhập diểm sinh" id="Sinh">
+    <button type="button" onclick="get_diem()">tinh diem trung binh</button>
+    <br>
+    <div id="dtb">0</div>
+    <script>
+        function get_diem() {
+            let Ly = parseFloat(document.getElementById("Ly").value)
+            let Hoa=parseFloat(document.getElementById("Hoa").value)
+            let Sinh=parseFloat(document.getElementById("Sinh").value)
+            let dtb=((Ly)+(Hoa)+(Sinh))/3;
+         document.getElementById("dtb").innerHTML= "diem trung binh la :"+ dtb;
+
+        }
+
+    </script>
+
+</body>
+</html>
