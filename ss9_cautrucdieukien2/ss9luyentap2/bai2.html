@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Mét sang feet</title>
+</head>
+<body>
+<b>Chuyển từ Mét sang feet</b><br>
+<label> Nhập số mét (m):</label><input type="number" id="met"><br>
+<button type="button" onclick="chuyen()">Chuyển</button>
+<p id="result"></p>
+<script>
+    function chuyen() {
+        let m=parseInt(document.getElementById("met").value);
+        let ft = m*3.2808;
+        let result ="";
+        document.getElementById("result").innerText= "Số đọ F là : " + ft;
+
+    }
+</script>
+</body>
+</html>

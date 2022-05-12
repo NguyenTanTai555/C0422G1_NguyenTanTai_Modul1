@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích tam giác vuông</title>
+</head>
+<body>
+<b>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</b><br>
+<label>Nhập cạnh a :</label><input type="number" id="canha"><br>
+<label>Nhập cạnh b :</label><input type="number" id="canhb"><br>
+<button type="button" onclick="check()">Tính</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let a=document.getElementById("canha").value;
+        let b=document.getElementById("canhb").value;
+        let s =a*b/2;
+        let result="";
+        document.getElementById("result").innerHTML= "diện tích tam giác vuông là : "+ s +" m<sup>2</sup>"
+
+    }
+</script>
+</body>
+</html>

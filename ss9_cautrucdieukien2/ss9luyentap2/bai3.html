@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình vuông</title>
+</head>
+<body>
+<b> Bài 3 : tính diện tích hình vuông :</b><br>
+<label>Nhập cạnh hình vuông :</label><input type="number" id="canh"><br>
+<button type="button" onclick="check()">Tính</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let a=parseInt(document.getElementById("canh").value);
+        let s=a*a;
+        let result="";
+        document.getElementById("result").innerText= "diện tích hình vuông là "+ s +"cm";
+
+    }
+</script>
+</body>
+</html>

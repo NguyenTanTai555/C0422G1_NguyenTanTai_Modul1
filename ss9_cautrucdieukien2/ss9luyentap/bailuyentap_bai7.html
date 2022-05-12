@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<b>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</b><br>
+<label>Nhập thời gian gọi (phút):</label> <input type="number" id="times"><br>
+<button type="button" onclick="check()">kiem tra</button>
+<p id="result"></p>
+<script>
+    const GC= 1500;
+    function check() {
+        let times=parseInt(document.getElementById("times").value);
+        let money=times*GC;
+        document.getElementById("result").innerText="số tiền phải thanh toán là "+ money +" đ";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</b><br>
+<label>Nhập điểm bài kiểm tra:</label> <input type="number" id="bkt"><br>
+<label>Nhập điểm thi giữa kì :</label> <input type="number" id="dgk"><br>
+<label>Nhập điểm thi cuối kì :</label> <input type="number" id="dck"><br>
+<p id="result">Học lực là</p>
+<button type="button" onclick="check()">Kiểm tra</button>
+</body>
+</html>
+<script>
+    function check() {
+        let a = parseFloat(document.getElementById("bkt").value);
+        let b = parseFloat(document.getElementById("dgk").value);
+        let c = parseFloat(document.getElementById("dck").value);
+        let dtb = (a + b + c) / 3;
+        let result = "";
+        if (dtb >= 9) {
+            result = "loại giỏi";
+        } else if (dtb >= 7) {
+            result = "Loại khá";
+        } else if (dtb >= 5) {
+            result = "Trung bình";
+        } else if (dtb >= 3) {
+            result = "Loại yếu";
+        } else {
+            result = "loại kém";
+        }
+        document.getElementById("result").innerHTML = "điểm tổng kết là: " + dtb   +  "học lực là: " + result;
+    }
+
+</script>

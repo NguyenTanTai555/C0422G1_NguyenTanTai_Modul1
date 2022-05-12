@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập 1 bài 2</title>
+</head>
+<body>
+<b>Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</b><br>
+Nhập tuổi:<input type="text" id="age">
+<p id="viewAge"></p><br>
+<button type="button" onclick="checkage()">check</button>
+<hr>
+<script>
+    function checkage() {
+        let age=document.getElementById('age').value;
+        age>=15?document.getElementById('viewAge').innerText="đủ điều kiện vào lớp 10":document.getElementById('viewAge').innerText="không đủ điều kiện vào lớp 10"
+
+    }
+</script>
+</body>
+</html>

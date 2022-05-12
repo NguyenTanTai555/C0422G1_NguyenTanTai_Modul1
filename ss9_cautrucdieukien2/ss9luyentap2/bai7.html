@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<b> Bài 7: Giải phương trình bậc 2.</b><br>
+<label>Nhập số A</label><input type="number" id="hesoA"><br>
+<label>Nhập số B</label><input type="number" id="hesoB"><br>
+<label>Nhập số C</label><input type="number" id="hesoC"><br>
+<button type="button" onclick="check()">Tính phương trình</button>
+<p id ="result"></p>
+<script>
+    function check() {
+        let A =parseFloat(document.getElementById("hesoA").value);
+        let B =parseFloat(document.getElementById("hesoB").value);
+        let C =parseFloat(document.getElementById("hesoC").value);
+        let delta= B*B-4*A*C;
+
+        if (A==0) {
+           document.getElementById("result").innerHTML="Điều kiện A#0";
+        } else {
+            if (delta<0) {
+                document.getElementById("result").innerHTML= "Phương trình vô nghiệm";
+            } else if(delta==0) {
+                document.getElementById("result").innerHTML="Phương trình có nghiệm kép :" + "x1 = x2 "+ (-B/2*A) ;
+            } else if (delta>0) {
+                document.getElementById("result").innerHTML="Phương trình có 2 nghiệm Phân biệt "+ "x1 = " + ((-B+Math.sqrt(delta))/2*A) + "x2 = "+((-B-Math.sqrt(delta))/2*A);
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

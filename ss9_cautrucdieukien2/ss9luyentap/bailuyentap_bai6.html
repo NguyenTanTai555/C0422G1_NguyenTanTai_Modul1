@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Hoa hồng</title>
+</head>
+<body>
+<b> Bài 6 : Tính hoa hồng tùy theo mức doanh số bán hàng</b><br>
+<p><input type="number" id="sales"></p>
+<button type="button" onclick="checksale()">Check</button>
+<p id="result"></p>
+<script>
+    function checksale() {
+        let sales = parseInt(document.getElementById("sales").value);
+        let moneyBonus = 0;
+        let result = "";
+        if (sales < 0) {
+            result = " Số tiền không hợp lệ";
+        } else {
+            if (sales >= 100000000) {
+                moneyBonus = sales * 20 / 100;
+                result = "Hoa hồng tháng này bạn nhận được là : " + moneyBonus;
+            } else {
+                if (sales >= 50000000) {
+                    moneyBonus = sales * 10 / 100;
+                    result = "Hoa hồng tháng này bạn nhận được là : " + moneyBonus;
+                } else {
+                    moneyBonus = sales * 5 / 100;
+                    result = "Hoa hồng tháng này bạn nhận được là :" + moneyBonus;
+                }
+            }
+        } document.getElementById("result").innerText=result;
+    }
+</script>
+</body>
+</html>

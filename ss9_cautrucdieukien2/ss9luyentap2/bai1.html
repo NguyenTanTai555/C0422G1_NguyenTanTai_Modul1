@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen nhiet do</title>
+</head>
+<body>
+<b> Bài 1 : chuyển từ độ C sang độ F</b><br>
+<label> Nhập độ C :</label><input type="number" id="doc"><br>
+<button type="button" onclick="chuyen()">Chuyển</button>
+<p id="result"></p>
+<script>
+    function chuyen() {
+        let c=parseFloat(document.getElementById("doc").value);
+        let f=(c*9)/(32+5);
+        let result="";
+        document.getElementById("result").innerText= "So do F la : "+ f;
+    }
+</script>
+</body>
+</html>

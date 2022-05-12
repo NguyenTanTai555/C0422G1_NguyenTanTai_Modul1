@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1</title>
+</head>
+<body>
+<b>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không</b><br>
+    Nhập số a : <input type="text" id="soa"><br>
+    Nhập sô b : <input type="text" id="sob"><br>
+    <p id="view"></p><br>
+    <button type="button" onclick="check()">check</button>
+    <hr>
+</body>
+</html>
+<script>
+    function check() {
+    let a=document.getElementById('soa').value;
+    let b=document.getElementById('sob').value;
+    a%b==0?document.getElementById('view').innerText="a chia hết cho b!":document.getElementById('view').innerText="a không chia hết cho b"
+    }
+
+</script>

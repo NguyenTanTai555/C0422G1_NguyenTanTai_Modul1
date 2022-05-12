@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị lớn nhất</title>
+</head>
+<body>
+<b>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</b><br>
+Nhập số thứ 1:<input type="number" id="maxone">
+Nhập số thứ 2:<input type="number" id="maxtwo">
+Nhập số thứ 3:<input type="number" id="maxthree">
+<p id="viewMax"></p>
+<button type="button" onclick="checkMax()">Check</button>
+</body>
+</html>
+<script>
+    function checkMax() {
+        let number1=document.getElementById('maxone').value;
+        let number2=document.getElementById('maxtwo').value;
+        let number3=document.getElementById('maxthree').value;
+    if (number1>=number2){
+        if (number1>=number3){
+            document.getElementById('viewMax').innerHTML=number1 + "là số lớn nhất";
+        } else document.getElementById('viewMax').innerHTML=number3 + "là số lớn nhất";
+    } else if (number2>=number3){
+        document.getElementById('viewMax').innerHTML=number2 + "là số lớn nhất";
+    } else document.getElementById('viewMax').innerHTML=number3 + "là số lớn nhất";
+    }
+
+</script>
