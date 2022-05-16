@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình tính lãi xuất ngân hàng </title>
+</head>
+<body>
+<script>
+    let fv=parseFloat(prompt("Nhập số tiền tiết kiệm ban đầu"));
+    const index=3/100;// khai báo hằng cố định % lãi suất
+    let n;// số kỳ gởi(tháng(12))
+    for(n=1;n<=12;n++){
+        fv+= fv*0.03;
+    }document.write("số tiền lãi là : " +fv);
+
+
+</script>
+</body>
+</html>

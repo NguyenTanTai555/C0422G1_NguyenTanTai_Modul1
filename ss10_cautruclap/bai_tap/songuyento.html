@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("Nhập số lượng số nguyên tố cần hiển thị :"));
+    let count=0;
+    let i=2;
+    let countsnt;// biến đếm ước
+    while (count<number){
+        countsnt=0;
+        for (let j=1;j<=i;j++) {
+            if(i%j==0) {
+                countsnt++;
+            }
+        } if (countsnt==2) {// có 2 ước là số nguyên tố
+            document.write(i+"<br>");// nếu số nhập vào (number) có 2 ước thì in ra i
+            count++;
+        }
+        i++;
+    }
+</script>
+</body>
+</html>

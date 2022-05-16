@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên tố</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhập số lượng nguyên tố cần in ra :"))
+    let count = 0;//số lượng in ra có bằng số lượng nhập vào ko
+    let countsnt;// kiểm tra xem có phải só nguyên tố không
+    for (let i = 2; i < 1000; i++) {
+        if (count<number){
+            countsnt=0;
+        } for (j=1;j<=i;j++){
+            if(i%j==0){
+                countsnt++;
+            }
+        }if (countsnt==2){
+            document.write(i+"<br>")
+            count++;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+<b> Bài 7: </b>
+<script>
+    let i = 0;
+    for (let i = 1; i <= 100; i++) {
+        if (i%3==0&&i%5!=0){
+            document.write("fizz"+"<br>");
+            continue;
+        } else if (i%3!=0&&i&5==0) {
+            document.write("buzz"+"<br>");
+            continue;
+        } else if (i%3==0&&i%5==0){
+            document.write("Fizzbuzz"+"<br>");
+        }
+        document.write(i+"<br>");
+    }
+</script>
+
+</body>
+</html>

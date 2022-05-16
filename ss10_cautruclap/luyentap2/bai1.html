@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in ra dãy fibonacci</title>
+</head>
+<body>
+<b> Bài 1: In dãy fibonacci</b><br>
+<script>
+    let n=prompt("nhập số cần hiển thị ra màn hình : ");
+    let f0 = 0;
+    let f1=1;
+    let fn=f0+f1;
+    for (i=0;i<n;i++){
+        if (i == 0 || i == 1) {
+            document.write(i+"<br>")
+        } else {
+            document.write(fn +"<br>")
+            f0 = f1
+            f1 = fn
+            fn = f0 + f1
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="myFunction()">Play</button>
+<script>
+    function myFunction() {
+        let range= parseFloat(prompt("Nhập số trong phạm vi bạn cần đoán"));
+        let numberRange= Math.floor(Math.random()*(range+1));
+        console.log(numberRange);
+        for (i=1;i<4;i++){
+            let guessRan= parseFloat(prompt("Nhập số bạn đoán?"));
+             if(guessRan==numberRange){
+                 document.write("bạn đã nhập đúng");
+            } else if(guessRan>numberRange){
+                 alert("số bạn đoán lớn hơn : ");
+             }else {
+                 alert("số bạn đoán nhỏ hơn : ");
+             }
+            }
+        if (numberRange==range){
+            document.write("số bạn đoán đúng là :" + range +"<br>")
+        } else {
+            document.write("bạn đã hết lượt chơi :" + "<br>")
+        }
+    } document.write("số bạn đoán đúng là : "+ numberRange);
+
+</script>
+
+</body>
+</html>
