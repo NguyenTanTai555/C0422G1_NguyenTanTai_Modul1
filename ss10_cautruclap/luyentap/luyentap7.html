@@ -5,18 +5,19 @@
     <title>bài 7</title>
 </head>
 <body>
-<b> Bài 7: </b>
+<b> Bài 7: </b><br>
 <script>
     let i = 0;
     for (let i = 1; i <= 100; i++) {
-        if (i%3==0&&i%5!=0){
+        if (i%3==0&&i%5==0){
+            document.write("fizzbuzz"+"<br>");
+            continue;
+        } else if (i%3==0) {
             document.write("fizz"+"<br>");
             continue;
-        } else if (i%3!=0&&i&5==0) {
-            document.write("buzz"+"<br>");
-            continue;
-        } else if (i%3==0&&i%5==0){
-            document.write("Fizzbuzz"+"<br>");
+        } else if (i%5==0){
+            document.write("buzz"+"<br>")
+                continue;
         }
         document.write(i+"<br>");
     }
