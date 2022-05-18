@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let index = 0
+    let array = [21, 787, 78, 32]
+    let max= array[0]
+    let sum= 0
+    for (index = 0; index < array.length; index++) {
+        sum+=array[index]
+        if (array[index] > max) {
+            max = array[index];
+        }
+    }
+    document.write("Số lớn nhất là: " + max+ "Trung bình của các phần tử trong mảng là: "+ sum/array.length)
+</script>
+</body>
+</html>

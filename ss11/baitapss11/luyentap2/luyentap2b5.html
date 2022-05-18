@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let index1=prompt("Nhập vào chuỗi đầu tiên")
+    let index2=prompt("Nhập vào chuỗi thứ hai")
+    let result="";
+    if (index1.length!=index2.length){
+        document.write("Hai chuỗi không giống nhau")
+    } else {
+        for(let i=0;i<index1.length;i++){
+            if (index1!=index2){
+                document.write("Hải chuỗi không giống nhau")
+                break;
+            } else {
+                result="Hải chuỗi giống nhau  " + index1;
+            }
+        }document.write(result);
+    }
+
+</script>
+</body>
+</html>

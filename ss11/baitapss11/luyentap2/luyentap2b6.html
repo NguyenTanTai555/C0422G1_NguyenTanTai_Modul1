@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let index = prompt("Nhập vào kí tự của bạn: ")
+    let arr = index.split("");
+    document.write(arr + "<br>");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == "-") {
+            arr[i] = "_";
+        }
+    }
+    document.write("chuỗi sau khi thay đổi là: " + arr)
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[]
+    let a=0
+    for (let i=0;i<10;i++)
+    {
+        arr[i]=prompt("nhập vào giá trị của phần tử" +i+"của mảng")//1,2,3,5,7
+    }
+    let check =prompt("nhập vào số muốn kiểm tra")
+    for (i=0;i<10;i++){
+        if(check==arr[i]){
+            for (j=0;j<10;j++){
+                arr[j]=arr[j+1]
+            }
+                arr[arr.length-1]=0
+        }
+    }
+</script>
+</body>
+</html>

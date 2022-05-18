@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dịch</title>
+</head>
+<body>
+<input type="text" name="" placeholder="Nhâp từ cần dịch" id="form">
+<button type="button" id="dich" onclick="trans()">Dịch</button>
+<p id="result"></p>
+<script>
+    let eng=["black","white","blue","green","pink","red"]
+    let vie=["đen","trắng","xanh dương","xanh lá","hồng","đỏ"]
+    let count=0;
+    function trans() {
+        let checktext = document.getElementById("form").value
+        for (i = 0; i < eng.length; i++) {
+            if (checktext == eng[i]) {
+                document.getElementById("result").innerText = vie[i]
+            }
+        }
+        for (i = 0; i < vie.length; i++) {
+            if (checktext == vie[i]) {
+                document.getElementById("result").innerText = eng[i]
+                count++
+            }
+        }if(count==0){
+            document.getElementById("result").innerText="Từ bạn nhập chưa có trong từ điển"
+        }
+    }
+</script>
+</body>
+</html>

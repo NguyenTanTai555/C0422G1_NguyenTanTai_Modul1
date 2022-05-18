@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let n = 10
+    let arr = []
+    let result = "";
+    let a = 0
+    for (i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử mảng: ")
+    }
+    let V = prompt("nhập số V")
+    for (i = 0; i < arr.length; i++) {
+        if (V == arr[i]) {
+            result=V + "là một số phần tử trong mảng "
+            break;
+        } else {
+            result = V + " không có trong mảng"
+        }
+    }
+    document.write(result)
+</script>
+</body>
+</html>

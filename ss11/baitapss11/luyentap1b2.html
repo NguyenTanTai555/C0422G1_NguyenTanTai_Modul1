@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khởi tạo 10 số nguyên </title>
+</head>
+<b> Bài 2: Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có
+    giá trị lớn nhất trong mảng và vị trí của phần tử đó.</b><br>
+<body>
+<script>
+    let x = 0
+    let array = [1, 3, 5, 7, 9, 11, 23, 15, 17, 10]
+    let max = array[0];
+    for (x = 1; x < array.length; x++) {
+        if (array[x] > max) {
+            max = array[x];
+            var a = x
+        }
+    }document.write("Số lớn nhất là: " + max + "<br>"+"vị trí của số đó là: "+ a)
+</script>
+</body>
+</html>

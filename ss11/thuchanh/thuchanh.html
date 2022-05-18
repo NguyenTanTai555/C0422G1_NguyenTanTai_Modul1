@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+
+<input type="text" id="textName" placeholder="Nhập họ và tên">
+<input type="button" id="inputName" value="Add" onclick="add_element_to_array()">
+<input type="button" id="displayName" value="Display" onclick="display_array()">
+<input type="button" id="reverse" value="Reverse" onclick="reverse_array()">
+<input type="button" id="search" value="Search" onclick="search_array()">
+<input type="button" id="checkmax" value="check" onclick="checkmax_array()">
+<p id="result"></p>
+<p id="output"></p>
+<hr>
+
+<script>
+    let x = 0
+    let array = [];
+
+    function add_element_to_array() {
+        array[x] = document.getElementById("textName").value;
+        alert("Đã nhập : " + array[x] + "vị trí : " + x);
+        x++;
+        document.getElementById("textName").value = "";
+    }
+
+    function display_array() {
+        let e = "<hr>";
+        for (let i = 0; i < array.length; i++) {
+            e += "element " + i + "= " + array[i] + "<br>"
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+
+    function reverse_array() {
+        let first = 0;
+        let last = array.length - 1;
+        while (first < last) {
+            let a = array[first];
+            array[first] = array[last]
+            array[last] = a
+            first++
+            last--
+        }
+        document.getElementById("output").innerText = "Reverse" + array;
+    }
+
+    function search_array() {
+        let value = prompt("Enter a number: ")
+        for (x = 0; x < array.length; x++) {
+            if (value == array[x]) {
+                alert("value" + array[x] + "found at" + x)
+            }
+        }
+    }
+
+    function checkmax_array() {
+        let max = array[0];
+        for (x = 1; x < array.length; x++) {
+            if (array[x] > max) {
+                max = array[x];
+            }
+        }document.getElementById("output").innerHTML=x;
+    }
+</script>
+</body>
+</html>
