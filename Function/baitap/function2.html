@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<b> Chuyển feed sang meter</b>
+<input type="number" id="meter" oninput="changeMeter()">
+<p id="feed1"></p><br>
+<b>Chuyển meter sang feed</b>
+<input type="number" id="feed" oninput="changerFeed()">
+<p id="meter1"></p>
+<script>
+    function changeMeter() {
+        let meter = document.getElementById("meter").value;
+        let feed = (3.279 * meter);
+        document.getElementById("feed1").innerHTML = feed;
+    }
+
+    function changerFeed() {
+        let feed = document.getElementById("feed").value;
+        let meter = (0.305 * feed);
+        document.getElementById("meter1").innerHTML = meter;
+
+    }
+
+</script>
+
+</body>
+</html>

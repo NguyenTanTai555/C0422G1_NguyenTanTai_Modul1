@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<b> Bài 2: Khởi tạo mảng và hiển thị số lớn nhất và vị trí của số đó</b><br>
+<script>
+    let x=0;
+    let array = [1, 3, 5, 7, 9, 11, 23, 15, 17, 10]
+    let max = array[0]
+    for (let x = 1; x < array.length; x++) {
+        if (array[x] > max) {
+            max = array[x]
+            var a = x
+        }
+    }
+    document.write("số lớn nhất là " + max +"<br>"+ "vị trí của số đó là " + a)
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5:</title>
+</head>
+<body>
+<script>
+    let star0 = ["Polaris", "Adebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];// tên các ngôi sao
+    let star1 = ["UrsarMinorr", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", " Leo"];// tên các chòm sao
+    let length1 = star0.length;
+    let star = prompt("Nhập vào sao bạn cần tìm:")
+
+    function checkarray(star) {
+        let index = 0;
+        let result = "";
+        for (let i = 0; i < length1; i++) {
+            if (star === star0[i]) {
+                result = star1[i]
+                return result;
+            } else {
+                result = "Không tìm thấy chòm sao"
+            }
+        } return result;
+    }
+    let result = checkarray(star);
+    document.write(result)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function myconfirm(answer) {
+        result="";
+        if (answer){
+            result = "yup";
+        } else {
+            result = "bye";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("ban co muon dam nhau khong")
+    let traloi= myconfirm(confirmAnswer)
+    alert(traloi);
+</script>
+</body>
+</html>

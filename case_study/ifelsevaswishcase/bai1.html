@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = prompt("nhap so tien luong")
+    document.write("So tien luong la" + luong + "<br>")
+    check(luong)
+    function check(wage) {
+        let income = 0;
+        let wages = 0;
+        if (wage >= 15000000) {
+            income = wage * 0.2;
+            wages = wage - income;
+            document.write("Số tiền thuế phải nộp là" + income + "<br>số tiền thực nhận là" + wages);
+        } else if (wage >= 7000000) {
+            income = wage * 0.1;
+            wages = wage - income;
+            document.write("Số tiền thuế phải nộp là" + income + "<br>số tiền thực nhận là" + wages);
+        } else if (wage<7000000){
+            income = wage * 0.05;
+            wages = wage - income;
+            document.write("Số tiền thuế phải nộp là" + income + "<br>số tiền thực nhận là" + wages);
+        }
+    }
+
+</script>
+</body>
+</html>

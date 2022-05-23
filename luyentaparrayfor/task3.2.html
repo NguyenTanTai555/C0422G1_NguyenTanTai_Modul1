@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhaapj vaof 1 so")
+    let count = 0;// bien dem so nguyen to
+    let countsnt = 0;//bien dme uoc snt
+    for (let i = 0; i <= number; i++) {
+        if(i===0||i===1){
+            document.write(i+"<br>")
+        }
+        if (count < number) {
+            countsnt = 0;
+            for (let j = 1; j <= i; j++) {//12345678910
+                if (i % j === 0) {
+                    countsnt++;
+                }
+            }
+            if (countsnt >= 3) {
+                document.write(i + "<br>")
+                count++;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

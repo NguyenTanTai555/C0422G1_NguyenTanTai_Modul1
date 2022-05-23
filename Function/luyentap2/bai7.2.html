@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi 2 số</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("Nhập số đầu tiên")
+    let number2 = +prompt("nhập số thứ 2")
+    changernumber(number1,number2)
+    function changernumber(number1, number2) {
+        let count = number1
+        number1 = number2
+        number2 = count
+        document.write(number1+"<br>"+number2)
+    }
+</script>
+
+</body>
+</html>

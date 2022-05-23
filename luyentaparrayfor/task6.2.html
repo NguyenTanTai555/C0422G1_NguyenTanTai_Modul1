@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr=[13,7,12,8,11,2,5,1,19];
+    let sum=0;
+    for (let i=0;i<arr.length;i++){
+        let sum = arr[i]+arr[i+1]
+        if (sum==20){
+            arr[i]=20;
+            arr[i+1]=20;
+            i++;
+        }
+    }document.write(arr)
+</script>
+</body>
+</html>

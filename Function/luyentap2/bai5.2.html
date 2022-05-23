@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập 3 số nguyên hiển thị số nhỏ nhát</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào số đầu tiên")
+    let b = +prompt("Nhập vào số thứ 2")
+    let c = +prompt("Nhập vào số thứ 3")
+    checknumber(a, b, c);
+
+    function checknumber(a, b, c) {
+        if (a < b && a < c) {
+            min = a;
+            document.write("Số nhỏ nhất là " + a)
+        }
+        if (b < a && b < c) {
+            min = b;
+            document.write("Số nhỏ nhất là " + b)
+        }
+        if (c < a && c < b) {
+            min = c;
+            document.write("Số nhỏ nhất là " + c)
+        }
+    }
+</script>
+</body>
+</html>

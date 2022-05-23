@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let index = [1,1,5,3,1,5,232,4,5]
+    let count = 1;
+    for (let i = 0; i < index.length; i++) {
+        if (index[i] != "") {
+            count=1;
+            for (let j = i + 1; j < index.length; j++) {
+                if (index[i] == index[j]) {
+                    count++;
+                    index[j]="";
+                }
+            }document.write(index[i]+"xuất hiện"+count+"lần"+"<br>")
+        }
+    }
+
+</script>
+
+</body>
+</html>

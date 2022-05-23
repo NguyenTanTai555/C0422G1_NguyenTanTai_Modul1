@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập vào số phần tử mảng")
+    let arr = [];
+    for (let i = 0; i < num; i++) {
+        arr[i] = +prompt("Nhập mảng của bạn :")
+    }
+    document.write(changerarray(arr))
+
+    function changerarray(array) {
+        let first = 0;
+        let last = array.length - 1;
+            while (first < last) {
+                    let b = array[first];
+                    array[first] = array[last];
+                    array[last] = b;
+                    first++;
+                    last--;
+                }
+        return array;
+    }
+
+
+</script>
+</body>
+</html>

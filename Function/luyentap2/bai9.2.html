@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập vào số phần tử mảng:")
+    let arr = []
+    for (let i = 0; i < number; i++) {
+        arr[i] = prompt("Nhập vào phần tử mảng " + i)
+    }
+    let V = prompt("Nhập số cần tìm")
+    document.write(checkarry(arr, V))
+
+    function checkarry(arr, number) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (number == arr[i]) {
+                count++;
+            }
+        }
+        if(count==0) {
+            return  -1
+        }
+        return count;
+    }
+
+</script>
+
+</body>
+</html>

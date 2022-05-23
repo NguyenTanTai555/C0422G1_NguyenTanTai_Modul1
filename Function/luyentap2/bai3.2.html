@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập số gia thừa")
+    giaithua(number)
+
+    function giaithua(number) {
+        let gt = 1;
+        for (let i = 1; i <= number; i++) {
+            gt *= i;
+        }
+        document.write("Giai thừa của "+number+"là"+gt)
+    }
+</script>
+
+</body>
+</html>
