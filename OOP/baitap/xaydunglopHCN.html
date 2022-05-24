@@ -11,31 +11,38 @@
             this.widht = width;
             this.height = height;
         }
-        getWidth(){
+
+        getwidth() {
             return this.widht;
         }
-        getHeight(){
+
+        getweight() {
             return this.height;
         }
-        setWidht(width){
-            return this.widht=width;
+
+        setwidht(width) {
+            return this.widht = width;
         }
-        setHeight(height){
-            return this.height=height;
+
+        setheight(height) {
+            return this.height = height;
         }
-        getArea(){
-            return this.height*this.widht;
+
+        getarea() {
+            return this.height * this.widht;
         }
-        getPremetter(){
-            return (this.widht+this.height)*2;
+
+        getpremetter() {
+            return (this.widht + this.height) * 2;
         }
     }
-    let myRectangle = new Rectangle(20,10);
-    myRectangle.setWidht(100);
-    myRectangle.setHeight(50);
-    let area= myRectangle.getArea();
-    let premetter=myRectangle.getPremetter();
-    document.write("Diện tích hình chữ nhật là : "+area+"<br>"+"Chu vi hình chữ nhật là :"+premetter)
+
+    let myrectangle = new Rectangle(20, 10);
+    myrectangle.setwidht(100);
+    myrectangle.setheight(50);
+    let area = myrectangle.getarea();
+    let premetter = myrectangle.getpremetter();
+    document.write("Area : " + area + "<br>" + "Premetter : " + premetter)
 
 </script>
 </body>
