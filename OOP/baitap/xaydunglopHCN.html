@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chử nhật</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.widht = width;
+            this.height = height;
+        }
+        getWidth(){
+            return this.widht;
+        }
+        getHeight(){
+            return this.height;
+        }
+        setWidht(width){
+            return this.widht=width;
+        }
+        setHeight(height){
+            return this.height=height;
+        }
+        getArea(){
+            return this.height*this.widht;
+        }
+        getPremetter(){
+            return (this.widht+this.height)*2;
+        }
+    }
+    let myRectangle = new Rectangle(20,10);
+    myRectangle.setWidht(100);
+    myRectangle.setHeight(50);
+    let area= myRectangle.getArea();
+    let premetter=myRectangle.getPremetter();
+    document.write("Diện tích hình chữ nhật là : "+area+"<br>"+"Chu vi hình chữ nhật là :"+premetter)
+
+</script>
+</body>
+</html>

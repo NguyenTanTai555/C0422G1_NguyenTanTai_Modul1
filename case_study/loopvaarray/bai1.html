@@ -6,17 +6,20 @@
 </head>
 <body>
 <script>
-    let num = +prompt("nhập vào chiều dài mảng ")
-    let a = [];
-    let b = [];
-    for (let i = 0; i < num; i++) {
-        a[i] = prompt("Nhập phần tử của mảng a")
-        for (let j=0;j<a;j++){
-            b[0]=a[0]
-        }
+    let number = +prompt("Nhập số phần tử của mảng")
+    let a = []
+    let b = []
+    for (let i = 0; i < number; i++) {
+        let c = a.push(i)
     }
+    console.log(a)
+    let c = 0;
+    for (let j = 0; j < a.length; j++) {
+        c += a[j];
+        b.push(c)
+    }
+    console.log(b)
 
 </script>
-
 </body>
 </html>

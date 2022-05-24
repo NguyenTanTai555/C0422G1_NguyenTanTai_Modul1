@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập vào số nguyen to can hien thi : ");
+    let i = 2;
+    let count = 0;
+    let countsnt;
+    while (count < number) {
+        countsnt=0;
+        for (let j=1;j<=i;j++){
+            if (i%j==0){
+                countsnt++;
+            }
+        }if (countsnt==2){
+            console.log(i+"<br>")
+            count++
+        }
+        i++;
+    }
+
+</script>
+
+</body>
+</html>

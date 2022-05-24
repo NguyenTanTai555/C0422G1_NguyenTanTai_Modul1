@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng mổ tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        getFahrenheit() {
+            return 9 / 5*this.radius + 32;
+        }
+
+        getKevinl() {
+            return this.radius + 273.15;
+        }
+    }
+
+    let C = +prompt("Nhap do C ban can chuyen doi :")
+    let mytemperature = new Temperature(C);
+    let my_fahrenheit = mytemperature.getFahrenheit()
+    let my_kevinl = mytemperature.getKevinl()
+    document.write("Do F la : " + my_fahrenheit + "<br>" + "Do kelvin la: " + my_kevinl)
+
+</script>
+</body>
+</html>
