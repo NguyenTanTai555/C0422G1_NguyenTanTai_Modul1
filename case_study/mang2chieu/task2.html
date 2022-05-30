@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let array = []
+    let newArray = []
+    let count = 0;
+    function checkPrime(m, n, number) {
+        for (let i = 0; i < m; i++) {
+            array[i] = [];
+            for (let j = 0; j < n; j++) {
+                array[i][j] = number;
+                number++;
+                count = 0;
+                for (let a = 0; a <= array[i][j]; a++) {
+                    if (array[i][j] % a == 0) {
+                        count++;
+                    }
+                }
+                if (count == 2) {
+                    newArray.push(array[i][j])
+                }
+            }
+        }
+        return document.write("Mảng chứa các số nguyên tố là " + newArray + "số lượng phần tử là " + newArray.length)
+    }
+
+    let m = +prompt("Nhập độ dài mảng cha")
+    let n = +prompt("Nhập độ dài mảng con")
+    let number = +prompt("NHập phần tử đầu tiên của mảng")
+
+    checkPrime(m, n, number)
+</script>
+
+</body>
+</html>

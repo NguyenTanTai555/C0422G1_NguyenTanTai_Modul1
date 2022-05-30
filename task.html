@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function solution(arg1) {
+        let result = [];
+        let count = 1;
+        let total;
+        for(let i = 0; i < arg1.length;i++) {
+            if(arg1[i]!="") {
+                count = 1;
+                for(let j = i+1; j < arg1.length; j++ ) {
+                    if(arg1[i]==arg1[j]) {
+                        arg1[j] = "";
+                        count++;
+                    }
+                }
+                result.push(count);
+            }
+        }
+        let tmp = result[0]
+        for(let i = 1; i < result.length; i++) {
+            if(tmp != result[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>

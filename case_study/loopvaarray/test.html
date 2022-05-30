@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let myOder = ["Cafe", "Cam Vắt", "Nước Ép Cà Rốt", "Nước Ép cà chua", "Nước lọc", "Nước Dừa", "thoát gọi món"]
+    let price = [45000, 50000, 30000, 25000, 10000, 50000]
+    let stt= [1,2,3,4,5,6,7]
+    let tmp;
+    do {
+        tmp = false;
+        let intnum=+prompt("'nhập số thứ tư của loại nước bạn muốn oder: \\n' + \"1.Cafe \\n\" + \"2.Cam vắt \\n\" + \"3.nước ép cà rốt \\n\" + \"4.nước ép cà chua \\n\" + \"5.nước lọc \\n\" + \"6.nước dừa \\n\" + \"7.thoát oder\"")
+        if (intnum>=7){
+            alert("thoát oder")
+            break;
+        }
+    }while(intnum<7)
+</script>
+
+</body>
+</html>

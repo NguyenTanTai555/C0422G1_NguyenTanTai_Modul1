@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let num = [1, 2, 3, 4, 5, 6, 7];
+    let menu = [
+        'Cafe',
+        'Cam vắt',
+        'Nước ép cà rốt',
+        'Nước ép cà chua',
+        'Nước lọc',
+        'Nước dừa',
+        'thoát Oder'
+    ];
+    let money = [7000, 8000, 6000, 9000, 5000, 15000];
+    let soLuong , tmp ,donGia, total;
+    do{
+        tmp = false;
+        let input = prompt('nhập số thứ tư của loại nước bạn muốn oder: \n' + "1.Cafe \n" + "2.Cam vắt \n" + "3.nước ép cà rốt \n" + "4.nước ép cà chua \n" + "5.nước lọc \n" + "6.nước dừa \n" + "7.thoát oder");
+        if (input >= 7){
+            alert('thoát oder!')
+            break;
+        }
+        for (var i = 0 ; i < num.length ; i++ ){
+            if (input == num[i]){
+                num[i] = menu[i];
+                donGia = money[i]
+                alert('bạn muốn oder :' + menu[i] + "\nđơn giá = " + donGia);
+                tmp = true;
+            }
+        }if (tmp = true){
+            soLuong = parseInt(prompt('nhập số lượng cân oder :'));
+            total = soLuong * donGia;
+            alert('tổng tiền cẩn thanh toán là :' + total + "Vnd\nthanh toán đi bạn eei!");
+        }
+    }while (input <= 7)
+</script>
+</body>
+</html>

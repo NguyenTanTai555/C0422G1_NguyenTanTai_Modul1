@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố trong mảng 2 chiều và đếm </title>
+</head>
+<!--Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.-->
+<body>
+<script>
+    let array = []
+    let newArray = []
+    let count = 0;
+    function checkPrime(m, n, number) {
+        for (let i = 0; i < m; i++) {
+            array[i] = []
+            for (let j = 0; j < n; j++) {
+                array[i][j] = number;
+                number++;
+                count = 0
+                for (let a = 0; a <= array[i][j]; a++) {
+                    if (array[i][j] % a == 0) {
+                        count++;
+                    }
+                }
+                if (count == 2) {
+                    newArray.push(array[i][j])
+                }
+            }
+        }
+        return console.log(newArray + "<br>Số phần tử là só nguyên tố có trong mảng hai chiều là:" + newArray.length)
+    }
+
+    let m = +prompt("Độ dài của mảng cha")
+    let n = +prompt("Độ dài của mảng con")
+    let number = +prompt("Nhập Số của bạn :")
+    checkPrime(m, n, number)
+
+
+</script>
+
+</body>
+</html>

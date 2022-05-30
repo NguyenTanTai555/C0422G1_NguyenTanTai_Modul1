@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi xâu kí tự</title>
+</head>
+<body>
+<script>
+    let indexChar = prompt("Nhập Chuỗi:")
+    let char1 = indexChar.trim()// trim() là hàm cắt phần thừa đầu và đuôi
+    let array = char1.toUpperCase().split(" ")
+    for (let i=0;i<array.length;i++){
+        array[i]=array[i].charAt(0).toUpperCase()+array[i].slice(1)
+    }let a=array.join(" ")
+    document.write(a)
+</script>
+</body>
+</html>
+<!--let array=char1.toLowerCase().split(" ");-->
+<!--for (let i=0;i<array.length;i++){-->
+<!--array[i]=array[i].charAt(0).toUpperCase()+array[i].slice(1)-->
+<!--} let a = array.join(" ")-->
+<!--document.write(a)-->

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let index = prompt("Nhập xâu kí tự của bạn")
+    let array = index.split("")
+    let arrResult = [];
+    document.write("xâu kí tự bạn nhập là " + index + "<br>")
+    for (let i = 0; i < array.length; i++) {
+        if (arrResult.indexOf(array[i]) === -1) {
+            arrResult.push(array[i]);
+        }
+    }
+    document.write("Số phần tử khác nhau là :"+arrResult.length+"<br> Các kí tự đó là"+arrResult)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng kí tự trong xâu</title>
+</head>
+<body>
+<script>
+    let num1 = prompt("Nhập vào chuỗi 1")//1123455 //32357
+    let num2 = prompt("NHập chuỗi 2")
+    document.write(num1 + "<br>")
+    document.write(num2 + "<br>")
+    document.write(commonCharacterCount(num1, num2))
+
+    function commonCharacterCount(num1, num2) {
+        let arrnum1 = num1.split("")
+        let arrnum2 = num2.split("")
+        let count = 0;
+        for (let i = 0; i < arrnum1.length; i++) {
+            for (let j = 0; j < arrnum2.length; j++) {
+                if (arrnum1[i] == arrnum2[j]) {
+                    arrnum2.splice(j, 1)
+                    count++
+                    break;
+                }
+            }
+
+        }
+        return count;
+    }
+</script>
+</body>
+</html>
